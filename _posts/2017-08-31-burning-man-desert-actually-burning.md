@@ -5,7 +5,7 @@ date:   	2017-08-30 09:10:00 -0700
 image1:		burningman_burning_before.jpg
 date1: 		Aug 10, 2017
 image2: 	burningman_burning_after.jpg
-date2:		Aug 29, 2017
+date2:		Aug 30, 2017
 icon:		sun
 tags:		[fire, disaster, travel]
 ---
