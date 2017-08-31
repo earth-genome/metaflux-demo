@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h1 class="page-heading">Recent stories</h1>
+  
+<div class="feed">
+  {{ content }}
+
+
+  <div class="ui feed">
+    {% for post in site.posts %}
+      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+      <div class="event">
+        <div class="label">
+          <i class="{{ post.icon }} icon"></i>
+        </div>
+        <div class="content">
+          <div class="summary">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+            <div class="date">{{ post.date | date: date_format }}</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

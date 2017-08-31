@@ -1,0 +1,54 @@
+---
+layout: 		default
+title: 			Submit a story
+permalink: 	/contact/
+---
+
+
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable grid container">
+    <div class="row">
+      <div class="ui text container">
+
+
+        <h2>Something newsworthy?</h2>
+
+        <p>
+
+          Artificial intelligence is fine, but real intelligence is better.  Our
+          algorithms are constantly finding new and relevant stories.  These idiot
+          computers may miss something worth including in our <span
+          class="poppins">Feed</span>.  Submit a story and we'll generate the story.
+
+        </p>
+
+        <p>
+
+          You can also just submit some feedback on <span
+          class="poppins">Metaflux</span>.  We will ignore it unless it is wildly complimentary.
+
+        </p>
+
+        <form action="https://formspree.io/{{ site.feedback_email }}" method="POST" class="ui form">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="name">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" name="_replyto">
+          </div>
+
+          <div class="field">
+            <label>Brief description of story (include a location on Earth)</label>
+            <textarea name="comments"></textarea>
+          </div>
+          <button type="submit" class="ui button">Send</button>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+

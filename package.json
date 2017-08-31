@@ -1,0 +1,22 @@
+{
+  "name": "metaflux",
+  "version": "0.0.1",
+  "description": "Proof-of-concept front-end for our tracking changes application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amos Stone",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "juxtaposejs": "^1.1.6",
+    "semantic-ui": "^2.2.11"
+  }
+}

@@ -1,0 +1,48 @@
+/*******************************
+        Global Overrides
+*******************************/
+
+a.header { font-family: 'Poppins'; font-size: 1.6rem; }
+.poppins { font-family: 'Poppins' !important; }
+h1.ui.header.poppins {
+	font-size: 3.0rem;
+	margin-bottom: 2.0em;
+}
+
+.white, .white a { color: #FFFFFF !important; }
+
+body.home.pushable > .pusher {
+	background: url(/images/earth.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.menu img.logo {
+	max-width: 50px;
+}
+
+.container.padded {
+	padding: 4.0rem 2.0rem;
+}
+
+.menu-wrapper {
+	padding-top: 1em;
+}
+
+.padded-white {
+  padding: 2.0em 3.0em;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-bottom: 8.0em;
+}
+
+body.home .ui.vertical.segment {
+  border-bottom: 0 none;
+}
+
+img.ui.image.daily-o-logo {
+  max-width: 62%;
+  margin: 0 auto;
+}

@@ -1,0 +1,34 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Metaflux
+email: info@blockorbit.com
+description: >
+  Change detection on a global scale.
+baseurl: ''
+feedback_email: feedback@orbitaltruth.com
+url: ''
+twitter_username: metaflux
+github_username:  danhammer
+google_analytics: UA-104345637-1
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+tawk: true
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - gulpfile.js
+  - semantic/tasks

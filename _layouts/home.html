@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="home pushable">
+
+    <div class="pusher">
+
+      <div class="ui vertical masthead center aligned segment screen-pane" aria-label="Conent">
+      	<div class="ui container">
+
+      		{% include header.html %}
+          
+      	</div>
+
+			  <div class="ui text container padded">
+
+			    {{ content }}
+
+			  </div>
+
+			</div>
+
+      {% include footer.html %}
+
+    </div>
+  </body>
+</html>

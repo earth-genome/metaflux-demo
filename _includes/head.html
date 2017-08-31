@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ "/semantic/dist/semantic.min.css" | relative_url }}">
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="{{ "/semantic/dist/semantic.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ "/images/apple-touch-icon-57x57.png" | relative_url }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ "/images/apple-touch-icon-114x114.png" | relative_url }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href={{ "/images/apple-touch-icon-72x72.png" | relative_url }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/images/apple-touch-icon-144x144.png" | relative_url }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ "/images/apple-touch-icon-120x120.png" | relative_url }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ "/images/apple-touch-icon-152x152.png" | relative_url }}" />
+  <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" sizes="32x32" | relative_url }}" />
+  <link rel="icon" type="image/png" href="{{ "/images/favicon-16x16.png" sizes="16x16" | relative_url }}" />
+  <meta name="application-name" content="Metaflux"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="{{ "/images/mstile-144x144.png" | relative_url }}" />
+  
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+
+  {% if site.tawk %}
+  {% include tawk.html %}
+  {% endif %}
+</head>
