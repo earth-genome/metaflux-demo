@@ -28,8 +28,9 @@ brew install node
 npm install gulp-cli -g
 npm install gulp -D
 
-# get the latest version of Ruby using rvm
-\curl -sSL https://get.rvm.io | bash # yes you need the trailing slash
+# get the latest version of Ruby using rvm.
+# yes you need the leading slash.
+\curl -sSL https://get.rvm.io | bash
 rvm install ruby-2.4.1
 
 # install jekyll
