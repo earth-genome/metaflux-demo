@@ -4,11 +4,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Metaflux
-email: info@blockorbit.com
+email: developer@earthgenome.org
 description: >
   Change detection on a global scale.
 baseurl: ''
-feedback_email: feedback@orbitaltruth.com
+feedback_email: developer@earthgenome.org
 url: ''
 twitter_username: metaflux
 github_username:  danhammer
@@ -20,7 +20,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-tawk: true
+tawk: false
+
+url: https://metaflux.news
+enforce_ssl: metaflux.news
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
